@@ -1,38 +1,3 @@
-header {
-    width: 100%;
-    height: 377px;
-    overflow: hidden
-}
-
-.wrapper {
-    width: 100%;
-    overflow: hidden
-}
-
-#menu {
-    padding: 56px 0 0 34px;
-    height: 30px
-}
-
-#menu li {
-    float: left;
-    padding-right: 42px
-}
-
-#menu li a {
-    display: block;
-    font-size: 24px;
-    color: #ffffff;
-    line-height: 1.2em;
+nav a{
     text-decoration: none
-}
-
-#menu li span {
-    font-size: 30px;
-    display: inline-block;
-    margin-top: -4px
-}
-
-#menu li a:hover, #menu #menu_active a {
-    color: #DC143C
 }
