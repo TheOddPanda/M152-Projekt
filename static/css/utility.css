@@ -1,0 +1,46 @@
+@import url("//www.dafont.com/de/year-supply-of-fair.font");
+
+.centerText {
+    text-align: center;
+}
+
+.centerContent {
+    margin: auto;
+}
+
+.textSizeAlign {
+    font-size: 2cm;
+    text-align: center;
+}
+
+.textFont {
+    font-family: "Year supply of fairy cakes";
+    text-shadow: black 0 0 10px;
+    color: #ffffff;
+}
+
+.centerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.equalButtonSize {
+    width: 120px;
+}
+
+.verticalAlignBtn {
+    vertical-align: middle;
+    display: block;
+}
+
+a {
+    color: #ab0000;
+    text-decoration: underline;
+    outline: none
+}
+
+a:hover {
+    text-decoration: none
+}
