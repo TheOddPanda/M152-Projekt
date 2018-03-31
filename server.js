@@ -28,12 +28,16 @@ app.get('/', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'index.html', null);
 });
 
-app.get('/copyright', function (request, response) {
-    serverHelperUtil.renderWebPage(response, 'index.html', null);
+app.get('/gallery', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'imagegallery.html', null);
+});
+
+app.get('/portfolio', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'portfolio.html', null);
 });
 
 app.get('/learnjournal', function (request, response) {
-    serverHelperUtil.renderWebPage(response, 'index.html', null);
+    serverHelperUtil.renderWebPage(response, 'learnjournal.html', null);
 });
 
 app.get('/libraries', function (request, response) {
