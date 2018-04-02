@@ -4,34 +4,68 @@
     <% include component/header.html %>
     <title>Image Gallery</title>
     <link rel="stylesheet" href="/static/css/gallery.css">
+    <script src="/static/js/lightbox.js"></script>
 </head>
 <body>
 <div id="page-container">
     <% include component/navbar.html %>
     <div id="container">
-        <div class="gallery">
-            <a target="_blank" href="/static/images/demon_prince.jpeg">
-                <img src="/static/images/demon_prince.jpeg" alt="Demon_prince" width="300" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
+        <div class="row">
+            <div class="column">
+                <img src="/static/images/dark_souls_3_small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="/static/images/dark_souls_heide_knight_small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="/static/images/dark_souls_small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
         </div>
 
-        <div class="gallery">
-            <a target="_blank" href="/static/images/ds3.jpg">
-                <img src="/static/images/ds3.jpg" alt="Ds3" width="300" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
-        </div>
-        <div class="gallery">
-            <a target="_blank" href="/static/images/ringed.jpg">
-                <img src="/static/images/ringed.jpg" alt="Ringed_Knight" width="300" height="200">
-            </a>
-            <div class="desc">Add a description of the image here</div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/static/images/dark_souls_3_large.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/static/images/dark_souls_heide_knight_large.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/static/images/dark_souls_large.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="/static/images/dark_souls_3_small.jpg" onclick="currentSlide(1)" alt="Dark_Souls3">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="/static/images/dark_souls_heide_knight_small.jpg" onclick="currentSlide(2)" alt="HeideKnight">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="/static/images/dark_souls_small.jpg" onclick="currentSlide(3)" alt="Dark_Souls">
+                </div>
+
+            </div>
         </div>
     </div>
-
-
 </div>
-
 </body>
 </html>
