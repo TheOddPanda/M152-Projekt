@@ -1,11 +1,14 @@
 const PORT = 10000;
+const docDir = "doc/";
 
 ///////////////////
 ///NPM-MODULES/////
 ///////////////////
 var express = require('express'),
     app = express(),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    markdown = require("markdown").markdown,
+    fs = require('fs');
 
 ///////////////////
 //CUSTOM MODULES///
@@ -32,8 +35,15 @@ app.get('/gallery', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'imagegallery.html', null);
 });
 
-app.get('/portfolio', function (request, response) {
-    serverHelperUtil.renderWebPage(response, 'portfolio.html', null);
+app.get('/competence1_1', function (request, response) {
+    var data = {};
+
+    //append png to html
+    var file = fs.readFileSync(docDir + "png_doc.md");
+    var stringifiedDoc = file.toString();
+    data.png = markdown.toHTML(stringifiedDoc);
+
+    serverHelperUtil.renderWebPage(response, 'competence1_1.html', data);
 });
 
 app.get('/learnjournal', function (request, response) {
