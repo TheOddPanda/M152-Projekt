@@ -2,36 +2,38 @@
 <html lang="en">
 <head>
     <% include component/header.html %>
+    <link rel="stylesheet" href="/static/css/tab_adjustment.css"/>
+    <link rel="stylesheet" href="/static/css/portfolio.css"/>
     <title>Fachkompetenz 1.1</title>
 </head>
 <body>
 <div id="page-container">
     <% include component/navbar.html %>
-
-    <ul  class="nav nav-pills">
-        <li><a class="active" href="#png" >PNG</a></li>
-        <li><a href="#jpg">JPG</a></li>
-        <li><a href="#gif">GIF</a></li>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="png-tab" data-toggle="tab" href="#png" role="tab" aria-controls="png"
+               aria-selected="true">PNG</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="jpg-tab" data-toggle="tab" href="#jpg" role="tab" aria-controls="jpg"
+               aria-selected="false">JPG/JPEG</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="gif-tab" data-toggle="tab" href="#gif" role="tab" aria-controls="gif"
+               aria-selected="false">GIF</a>
+        </li>
     </ul>
-
-
-    <div id="tabs">
-        <ul>
-
-        </ul>
-        <div id="png">
-            <% png %>
+    <div class="tab-content tab-content-padding" id="imageInformationTabs">
+        <div class="tab-pane fade show active" id="png" role="tabpanel" aria-labelledby="png-tab">
+            <%- png %>
         </div>
-        <div id="jpg">
-
+        <div class="tab-pane fade" id="jpg" role="tabpanel" aria-labelledby="jpg-tab">
+            <%- jpg %>
         </div>
-        <div id="gif">
-
+        <div class="tab-pane fade" id="gif" role="tabpanel" aria-labelledby="gif-tab">
+            <%- gif %>
         </div>
     </div>
-
-
-
     <!-- https://www.npmjs.com/package/markdown-->
 </div>
 </body>
