@@ -26,20 +26,15 @@ app.use(bodyParser.json({limit: "500mb"}));
 /////////////////
 ////REQUESTS/////
 /////////////////
-app.post('/uploadImage', function (request, response) {
-    let imgBase64 = request.body.imgBase64;
-    console.log(imgBase64);
-    response.end();
-});
 
 app.get('/', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'index.html', null);
 });
 
-app.get('/gallery', function (request, response) {
-    serverHelperUtil.renderWebPage(response, 'imagegallery.html', null);
-});
 
+/////////////////
+//Competence 1.1///
+/////////////////
 app.get('/competence1_1', function (request, response) {
     let data = {};
 
@@ -56,6 +51,59 @@ app.get('/competence1_1', function (request, response) {
 
     serverHelperUtil.renderWebPage(response, 'competence1_1.html', data);
 });
+
+/////////////////
+//Competence 1.2/
+/////////////////
+app.get('/competence1_2', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence1_2.html', null);
+});
+
+/////////////////
+//Competence 1.3/
+/////////////////
+app.get('/competence1_3', function (request, response) {
+    let data = {};
+    let calculateDownload = docDir + "/competence_1_3/calculateDownload.md";
+    data.calculateDownload = mdConverterUtil.convertMDFileToHtml(calculateDownload);
+
+    serverHelperUtil.renderWebPage(response, 'competence1_3.html', data);
+});
+
+/////////////////
+//Competence 1.4/
+/////////////////
+app.get('/competence1_4', function (request, response) {
+    let data = {};
+    let watermark = docDir + "/competence_1_4/watermark.md";
+    data.watermark = mdConverterUtil.convertMDFileToHtml(watermark);
+
+    serverHelperUtil.renderWebPage(response, 'competence1_4.html', data);
+});
+
+/////////////////
+//Competence 1.5/
+/////////////////
+app.get('/competence1_5', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence1_5.html', null);
+});
+
+app.post('/uploadImage', function (request, response) {
+    let imgBase64 = request.body;
+    console.log(imgBase64);
+    response.end();
+});
+
+/////////////////
+//Competence 1.7/
+/////////////////
+app.get('/competence1_7', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence1_7.html', null);
+});
+
+/////////////////
+//Competence 2///
+/////////////////
 
 app.get('/learnjournal', function (request, response) {
     let data = {};

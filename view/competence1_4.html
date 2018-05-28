@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include component/header.html %>
+    <link rel="stylesheet" href="/static/css/portfolio.css"/>
+    <title>Fachkompetenz 1.4</title>
+</head>
+<body>
+<div id="page-container">
+    <% include component/navbar.html %>
+    <div class="tab-content-padding">
+        <%- watermark %>
+
+        <p>Nachfolgendes Bild ohne digitales Wasserzeichen</p>
+        <img src="/static/images/watermark.jpg" width="100%">
+
+        <p>Dasselbe Bild nun mit Wasserzeichen</p>
+        <img src="/static/images/watermark.png" width="100%">
+
+    </div>
+</div>
+</body>
+</html>

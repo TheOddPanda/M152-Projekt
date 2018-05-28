@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include component/header.html %>
+    <link rel="stylesheet" href="/static/css/portfolio.css"/>
+    <script src="/static/js/watermark.min.js"></script>
+    <script src="/static/js/watermarkLib.js"></script>
+    <title>Fachkompetenz 1.5</title>
+</head>
+<body>
+<div id="page-container">
+    <% include component/navbar.html %>
+    <div class="tab-content-padding">
+        <p>Mithilfe einer geeigneten Library kann ich in meinem Programm beim Hochladen eines Bildes auf eine Webseite
+            automatisch ein Wasserzeichen hinzufügen.</p>
+
+        <input id="uploadImage" type="file">
+        <button onclick="uploadImage()">Upload</button>
+        <div id="container"></div>
+
+    </div>
+</div>
+</body>
+</html>
