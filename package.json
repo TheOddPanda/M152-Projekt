@@ -8,7 +8,8 @@
     "express": "^4.16.0 ",
     "markdown": "^0.5.0",
     "express-fileupload": "^0.4.0",
-    "watermarkjs": "^2.0.0"
+    "watermarkjs": "^2.0.0",
+    "exif": "^0.6.0"
   },
   "repository": {
     "type": "git",

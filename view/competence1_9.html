@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <% include component/header.html %>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="/static/css/portfolio.css"/>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+<div id="page-container">
+    <% include component/navbar.html %>
+    <div class="tab-content-padding">
+        <p>Nachfolgendes Bild wird verwendet für das herauslesen von Meta-Daten</p>
+        <img src="/static/images/meta_daten.jpg" width="100%">
+        <p>Die Meta-Daten kann man zum Beispiel über eine Library auslesen oder über die System spezifischen Tools
+            angezeigt werden</p>
+        <pre class="prettyprint" id="out"><%-exifData %></pre>
+    </div>
+</div>
+</body>
+</html>

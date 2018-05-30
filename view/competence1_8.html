@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include component/header.html %>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="/static/css/portfolio.css"/>
+    <link rel="stylesheet" href="/static/css/thumbnail.css">
+    <script src="/static/js/thumbnail.js"></script>
+</head>
+<body>
+<div id="page-container">
+    <% include component/navbar.html %>
+    <div id="container" class="tab-content-padding">
+        <p>Ich bin in der Lage von Bildern Thumbnails als Vorschau anzubieten und erst bei Bedarf das hochauflösende
+            Bild zu Laden. Die Thumbnails werden dabei durch Software (z.B. eine Library) dynamisch generiert.</p>
+
+        <img id="0" class="preview normal" src="" alt="preview"/><br/>
+        <img id="1" class="thumb normal" src="/static/images/dark_souls_3_large.jpg" alt="dark_souls_3_large"
+             onmouseover="preview(this)"/>
+        <img id="2" class="thumb normal" src="/static/images/dark_souls_heide_knight_large.jpg"
+             alt="dark_souls_heide_knight_large" onmouseover="preview(this)"/>
+        <img id="3" class="thumb normal" src="/static/images/dark_souls_large.jpg" alt="dark_souls_large"
+             onmouseover="preview(this)"/>
+    </div>
+</div>
+</body>
+</html>

@@ -1,13 +1,14 @@
 const PORT = 10000;
 const docDir = "doc/";
-const imageDir = "/static/images";
+const imageDir = "static/images";
 
 ///////////////////
 ///NPM-MODULES/////
 ///////////////////
 let express = require('express'),
     app = express(),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    ExifImage = require('exif').ExifImage;
 
 ///////////////////
 //CUSTOM MODULES///
@@ -77,7 +78,6 @@ app.get('/competence1_4', function (request, response) {
     let data = {};
     let watermark = docDir + "/competence_1_4/watermark.md";
     data.watermark = mdConverterUtil.convertMDFileToHtml(watermark);
-
     serverHelperUtil.renderWebPage(response, 'competence1_4.html', data);
 });
 
@@ -88,10 +88,14 @@ app.get('/competence1_5', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'competence1_5.html', null);
 });
 
-app.post('/uploadImage', function (request, response) {
-    let imgBase64 = request.body;
-    console.log(imgBase64);
-    response.end();
+/////////////////
+//Competence 1.6/
+/////////////////
+app.get('/competence1_6', function (request, response) {
+    let data = {};
+    let displayImages = docDir + "/competence_1_6/displayImages.md";
+    data.displayImages = mdConverterUtil.convertMDFileToHtml(displayImages);
+    serverHelperUtil.renderWebPage(response, 'competence1_6.html', data);
 });
 
 /////////////////
@@ -102,7 +106,50 @@ app.get('/competence1_7', function (request, response) {
 });
 
 /////////////////
+//Competence 1.8/
+/////////////////
+app.get('/competence1_8', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence1_8.html', null);
+});
+
+/////////////////
+//Competence 1.9/
+/////////////////
+app.get('/competence1_9', function (request, response) {
+    let data = {};
+    try {
+        new ExifImage({image: imageDir + '/meta_daten.jpg'}, function (error, exifData) {
+            if (error) {
+                console.log('Error: ' + error.message);
+            } else {
+                data.exifData = JSON.stringify(exifData);
+                serverHelperUtil.renderWebPage(response, 'competence1_9.html', data);
+            }
+        });
+    } catch (error) {
+        console.log('Error: ' + error.message);
+        serverHelperUtil.renderWebPage(response, 'competence1_9.html', null);
+    }
+});
+
+
+/////////////////
 //Competence 2///
+/////////////////
+
+/////////////////
+//Competence 4///
+/////////////////
+
+app.get('/competence4_3', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence4_3.html', null);
+});
+
+app.get('/competence4_4', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence4_4.html', null);
+});
+/////////////////
+/////Others//////
 /////////////////
 
 app.get('/learnjournal', function (request, response) {
@@ -113,8 +160,9 @@ app.get('/learnjournal', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'learnjournal.html', data);
 });
 
+
 app.get('/libraries', function (request, response) {
-    serverHelperUtil.renderWebPage(response, 'index.html', null);
+    serverHelperUtil.renderWebPage(response, 'libraries.html', null);
 });
 
 /////////////////
