@@ -1,6 +1,7 @@
 const PORT = 10000;
 const docDir = "doc/";
 const imageDir = "static/images";
+const learnDir = docDir + "/learnjournal/";
 
 ///////////////////
 ///NPM-MODULES/////
@@ -154,8 +155,16 @@ app.get('/competence4_4', function (request, response) {
 
 app.get('/learnjournal', function (request, response) {
     let data = {};
-    let learnJournalPath = docDir + "/learnjournal_20180319.md";
-    data.learnjournal = mdConverterUtil.convertMDFileToHtml(learnJournalPath);
+    data.learnjournal_20180319 = mdConverterUtil.convertMDFileToHtml(learnDir + "learnjournal_20180319.md");
+    data.learnjournal_20180326 = mdConverterUtil.convertMDFileToHtml(learnDir + "learnjournal_20180326.md");
+    data.learnjournal_20180330 = mdConverterUtil.convertMDFileToHtml(learnDir + "learnjournal_20180330.md");
+    data.lernjournal_20180409 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180409.md");
+    data.lernjournal_20180416 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180416.md");
+    data.lernjournal_20180423 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180416.md");
+    data.lernjournal_20180416 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180416.md");
+    data.lernjournal_20180423 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180423.md");
+    data.lernjournal_20180528 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180528.md");
+    data.lernjournal_20180530 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180530.md");
 
     serverHelperUtil.renderWebPage(response, 'learnjournal.html', data);
 });
