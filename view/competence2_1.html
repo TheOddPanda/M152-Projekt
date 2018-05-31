@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <% include component/header.html %>
+    <title>Fachkompetenz 2.1</title>
+    <link rel="stylesheet" href="/static/css/portfolio.css"/>
+</head>
+<body>
+<div id="page-container">
+    <% include component/navbar.html %>
+    <div class="tab-content-padding">
+        <p>Ich kann die grundlegenden Konzepte welche beim Upload einer Datei über HTTP eine Rolle spielen erklären und
+            mit der Hilfe einer Library oder selbst programmierten Applikation eine oder mehrere Dateien gleichzeitig
+            zum Webserver übertragen (Upload-Funktion in Website einbauen).</p>
+
+        <%- file_upload %>
+
+        <form ref='uploadForm'
+              id='uploadForm'
+              action='/upload'
+              method='post'
+              encType="multipart/form-data">
+            <input type="file" name="image"/>
+            <input type='submit' value='Upload!'/>
+        </form>
+    </div>
+</div>
+</body>
+</html>

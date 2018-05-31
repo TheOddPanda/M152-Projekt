@@ -6,9 +6,11 @@ const learnDir = docDir + "/learnjournal/";
 ///////////////////
 ///NPM-MODULES/////
 ///////////////////
-let express = require('express'),
+const express = require('express'),
+    fileUpload = require('express-fileupload'),
     app = express(),
     bodyParser = require('body-parser'),
+
     ExifImage = require('exif').ExifImage;
 
 ///////////////////
@@ -24,7 +26,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 app.use('/static', express.static(__dirname + '/static'));
 app.use(bodyParser.json({limit: "500mb"}));
-
+app.use(fileUpload());
 /////////////////
 ////REQUESTS/////
 /////////////////
@@ -138,6 +140,35 @@ app.get('/competence1_9', function (request, response) {
 //Competence 2///
 /////////////////
 
+app.get('/competence2_1', function (request, response) {
+    let data = {};
+    let file_upload = docDir + "/competence_2_1/file_upload.md";
+    data.file_upload = mdConverterUtil.convertMDFileToHtml(file_upload);
+    serverHelperUtil.renderWebPage(response, 'competence2_1.html', data);
+});
+
+app.post('/upload', function (req, res) {
+    if (!req.files) {
+        return res.status(7).send('No files were uploaded.');
+    }
+    let uploadedImage = req.files.image;
+    let name = uploadedImage.name;
+
+    uploadedImage.mv('./static/images/upload/' + name, function (err) {
+        if (err) {
+            return res.status(500).send(err);
+        }
+        res.send('File uploaded!');
+    });
+});
+
+app.get('/competence2_2', function (request, response) {
+    let data = {};
+    let createDirectory = docDir + "/competence_2_2/createDirectory.md";
+    data.createDirectory = mdConverterUtil.convertMDFileToHtml(createDirectory);
+    serverHelperUtil.renderWebPage(response, 'competence2_2.html', data);
+});
+
 /////////////////
 //Competence 4///
 /////////////////
@@ -163,7 +194,7 @@ app.get('/learnjournal', function (request, response) {
     data.lernjournal_20180423 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180416.md");
     data.lernjournal_20180416 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180416.md");
     data.lernjournal_20180423 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180423.md");
-    data.lernjournal_20180528 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180528.md");
+    data.lernjournal_20180430 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180430.md");
     data.lernjournal_20180530 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180530.md");
 
     serverHelperUtil.renderWebPage(response, 'learnjournal.html', data);
