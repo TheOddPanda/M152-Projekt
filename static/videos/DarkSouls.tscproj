@@ -1,0 +1,796 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "width" : 1280.0,
+  "height" : 720.0,
+  "version" : "0.5",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia Studio",
+    "platform" : "Windows",
+    "version" : "9.0"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\2018-06-03-12-12-18.mp4",
+      "rect" : [0, 0, 1280, 720],
+      "lastMod" : "20180603T102750",
+      "sourceTracks" : [
+        {
+          "range" : [0, 297339997],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1280, 720],
+          "sampleRate" : "500000/16667",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 297339997],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\2018-06-03-12-13-56.mp4",
+      "rect" : [0, 0, 1280, 720],
+      "lastMod" : "20180603T102536",
+      "sourceTracks" : [
+        {
+          "range" : [0, 196339998],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1280, 720],
+          "sampleRate" : "312500/10417",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 196339998],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 3,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\2018-06-03-12-14-41.mp4",
+      "rect" : [0, 0, 1280, 720],
+      "lastMod" : "20180603T102624",
+      "sourceTracks" : [
+        {
+          "range" : [0, 336669998],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1280, 720],
+          "sampleRate" : "1250000/41667",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 336669998],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 4,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\2018-06-03 12-22-17.mp4",
+      "rect" : [0, 0, 1280, 720],
+      "lastMod" : "20180603T102246",
+      "sourceTracks" : [
+        {
+          "range" : [0, 270339997],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1280, 720],
+          "sampleRate" : "10000000/333341",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 270339997],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 5,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\2018-06-03 12-23-40.mp4",
+      "rect" : [0, 0, 1280, 720],
+      "lastMod" : "20180603T102421",
+      "sourceTracks" : [
+        {
+          "range" : [0, 395999998],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1280, 720],
+          "sampleRate" : "10000000/333333",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 395999998],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 6,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\2018-06-03-12-06-41.mp4",
+      "rect" : [0, 0, 1280, 720],
+      "lastMod" : "20180603T102424",
+      "sourceTracks" : [
+        {
+          "range" : [0, 276669999],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1280, 720],
+          "sampleRate" : "10000000/333337",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 276669999],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 7,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\2018-06-03-12-09-18.mp4",
+      "rect" : [0, 0, 1280, 720],
+      "lastMod" : "20180603T102714",
+      "sourceTracks" : [
+        {
+          "range" : [0, 118669997],
+          "type" : 0,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1280, 720],
+          "sampleRate" : "5000000/166671",
+          "bitDepth" : 24,
+          "numChannels" : 0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 118669997],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 16,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 8,
+      "src" : "E:\\Schule\\3. Lehrjahr\\M152\\Projekt\\static\\videos\\Dark Souls III Soundtrack OST - Iudex Gundyr.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20180603T104250",
+      "sourceTracks" : [
+        {
+          "range" : [0, 2698187083],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "metaData" : ""
+        }
+      ]
+    }
+  ],
+  "timeline" : {
+    "id" : 9,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "duration" : 89.6666666666667,
+          "title" : "",
+          "type" : "",
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 10,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 11,
+                          "_type" : "VMFile",
+                          "src" : 6,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "2018-06-03-12-06-41"
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 0,
+                          "duration" : 540,
+                          "mediaStart" : 66,
+                          "mediaDuration" : 540,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 12,
+                          "_type" : "AMFile",
+                          "src" : 6,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "sampleRate" : 44100,
+                            "bitDepth" : 16,
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 0,
+                          "duration" : 540,
+                          "mediaStart" : 66,
+                          "mediaDuration" : 540,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 0,
+                    "duration" : 540,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 830,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    }
+                  },
+                  {
+                    "id" : 13,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 14,
+                          "_type" : "VMFile",
+                          "src" : 7,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "2018-06-03-12-09-18"
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 540,
+                          "duration" : 182,
+                          "mediaStart" : 73,
+                          "mediaDuration" : 182,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 15,
+                          "_type" : "AMFile",
+                          "src" : 7,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "sampleRate" : 44100,
+                            "bitDepth" : 16,
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 540,
+                          "duration" : 182,
+                          "mediaStart" : 73,
+                          "mediaDuration" : 182,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 540,
+                    "duration" : 182,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 356,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    }
+                  },
+                  {
+                    "id" : 16,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 17,
+                          "_type" : "VMFile",
+                          "src" : 1,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "2018-06-03-12-12-18"
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 722,
+                          "duration" : 475,
+                          "mediaStart" : 69,
+                          "mediaDuration" : 475,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 18,
+                          "_type" : "AMFile",
+                          "src" : 1,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "sampleRate" : 44100,
+                            "bitDepth" : 16,
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 722,
+                          "duration" : 475,
+                          "mediaStart" : 69,
+                          "mediaDuration" : 475,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 722,
+                    "duration" : 475,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 891,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    }
+                  },
+                  {
+                    "id" : 19,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 20,
+                          "_type" : "VMFile",
+                          "src" : 3,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "2018-06-03-12-14-41"
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 1197,
+                          "duration" : 455,
+                          "mediaStart" : 555,
+                          "mediaDuration" : 455,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 21,
+                          "_type" : "AMFile",
+                          "src" : 3,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "sampleRate" : 44100,
+                            "bitDepth" : 16,
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 1197,
+                          "duration" : 455,
+                          "mediaStart" : 555,
+                          "mediaDuration" : 455,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 1197,
+                    "duration" : 455,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1010,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    }
+                  },
+                  {
+                    "id" : 22,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 23,
+                          "_type" : "VMFile",
+                          "src" : 4,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "2018-06-03 12-22-17"
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 1652,
+                          "duration" : 649,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 649,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 24,
+                          "_type" : "AMFile",
+                          "src" : 4,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "sampleRate" : 44100,
+                            "bitDepth" : 16,
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 1652,
+                          "duration" : 649,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 649,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 1652,
+                    "duration" : 649,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 810,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    }
+                  },
+                  {
+                    "id" : 25,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 26,
+                          "_type" : "VMFile",
+                          "src" : 5,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "2018-06-03 12-23-40"
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 2301,
+                          "duration" : 379,
+                          "mediaStart" : 75,
+                          "mediaDuration" : 379,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 27,
+                          "_type" : "AMFile",
+                          "src" : 5,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "sampleRate" : 44100,
+                            "bitDepth" : 16,
+                            "gain" : 1.0,
+                            "mixToMono" : false
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 2301,
+                          "duration" : 379,
+                          "mediaStart" : 75,
+                          "mediaDuration" : 379,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 2301,
+                    "duration" : 379,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1188,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "FadeThroughBlack",
+                    "duration" : 30,
+                    "trivial" : false,
+                    "useAudioPreRoll" : true,
+                    "useVisualPreRoll" : true,
+                    "rightMedia" : 10
+                  },
+                  {
+                    "name" : "FadeThroughBlack",
+                    "duration" : 27,
+                    "trivial" : false,
+                    "useAudioPreRoll" : true,
+                    "useVisualPreRoll" : true,
+                    "leftMedia" : 10,
+                    "rightMedia" : 13
+                  },
+                  {
+                    "name" : "FadeThroughBlack",
+                    "duration" : 13,
+                    "trivial" : false,
+                    "useAudioPreRoll" : true,
+                    "useVisualPreRoll" : true,
+                    "leftMedia" : 13,
+                    "rightMedia" : 16
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 15,
+                    "trivial" : false,
+                    "useAudioPreRoll" : true,
+                    "useVisualPreRoll" : true,
+                    "leftMedia" : 16,
+                    "rightMedia" : 19
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 23,
+                    "trivial" : false,
+                    "useAudioPreRoll" : true,
+                    "useVisualPreRoll" : true,
+                    "leftMedia" : 19,
+                    "rightMedia" : 22
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 15,
+                    "trivial" : false,
+                    "useAudioPreRoll" : true,
+                    "useVisualPreRoll" : true,
+                    "leftMedia" : 22,
+                    "rightMedia" : 25
+                  },
+                  {
+                    "name" : "FadeThroughBlack",
+                    "duration" : 30,
+                    "trivial" : false,
+                    "useAudioPreRoll" : true,
+                    "useVisualPreRoll" : true,
+                    "leftMedia" : 25
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                  {
+                    "id" : 28,
+                    "_type" : "AMFile",
+                    "src" : 8,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Dark Souls III Soundtrack OST - Iudex Gundyr",
+                      "sampleRate" : 44100,
+                      "bitDepth" : 0,
+                      "gain" : 1.0,
+                      "mixToMono" : false
+                    },
+                      "channelNumber" : "0,1",
+                    "parameters" : {
+                      "volume" : 0.549450549450549
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 2690,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 2690,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 2,
+                "medias" : [
+                ]
+              },
+              {
+                "trackIndex" : 3,
+                "medias" : [
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 42,
+      "backgroundColor" : [ 0, 0, 0, 191],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "backgroundColor" : [ 0, 0, 0, 255]
+  },
+  "metadata" : {
+    "AutoSaveFile" : "C:\\Users\\Adrian\\AppData\\Local\\TechSmith\\Camtasia Studio\\9.0\\Auto-Saves\\DarkSouls1892b42a.autosave.tscproj",
+    "CanvasZoom" : 100,
+    "Date" : "03.06.2018 12:16:34 PM",
+    "IsAutoSave" : "0",
+    "Language" : "DEU",
+    "ProfileName" : "Nur MP4 (bis 1080p)",
+    "ProjectDimensionsChanged" : "1",
+    "Title" : "DarkSouls",
+    "audioNarrationNotes" : "",
+    "calloutStyle" : "Basic",
+    "canvasDetached" : "False",
+    "canvasPositionHeight" : "0",
+    "canvasPositionLeft" : "0",
+    "canvasPositionTop" : "0",
+    "canvasPositionWidth" : "0"
+  }
+}

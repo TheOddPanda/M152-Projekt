@@ -170,8 +170,52 @@ app.get('/competence2_2', function (request, response) {
 });
 
 /////////////////
+//Competence 3///
+/////////////////
+app.get('/competence3_1', function (request, response) {
+    let data = {};
+    let storyboard = docDir + "/competence_3_1/storyboard.md";
+    data.storyboard = mdConverterUtil.convertMDFileToHtml(storyboard);
+    serverHelperUtil.renderWebPage(response, 'competence3_1.html', data);
+});
+
+app.get('/competence3_2', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence3_2.html', null);
+});
+
+app.get('/competence3_3', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence3_3.html', null);
+});
+
+app.get('/competence3_4', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence3_4.html', null);
+});
+
+app.get('/competence3_7', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence3_7.html', null);
+});
+
+app.get('/competence3_9', function (request, response) {
+    let data = {};
+    let video = docDir + "/competence_3_9/video.md";
+    data.video = mdConverterUtil.convertMDFileToHtml(video);
+    serverHelperUtil.renderWebPage(response, 'competence3_9.html', data);
+});
+
+/////////////////
 //Competence 4///
 /////////////////
+
+app.get('/competence4_1', function (request, response) {
+    let data = {};
+    let html = docDir + "/competence_4_1/html.md";
+    data.html = mdConverterUtil.convertMDFileToHtml(html);
+    serverHelperUtil.renderWebPage(response, 'competence4_1.html', data);
+});
+
+app.get('/competence4_2', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence4_2.html', null);
+});
 
 app.get('/competence4_3', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'competence4_3.html', null);
@@ -180,6 +224,39 @@ app.get('/competence4_3', function (request, response) {
 app.get('/competence4_4', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'competence4_4.html', null);
 });
+
+app.get('/competence4_5', function (request, response) {
+    let data = {};
+    let storage = docDir + "/competence_4_5/storage.md";
+    data.storage = mdConverterUtil.convertMDFileToHtml(storage);
+    serverHelperUtil.renderWebPage(response, 'competence4_5.html', data);
+});
+
+/////////////////
+//Competence 5///
+/////////////////
+app.get('/competence5_1', function (request, response) {
+    let data = {};
+    let ppidpi = docDir + "/competence_5_1/ppidpi.md";
+    data.ppidpi = mdConverterUtil.convertMDFileToHtml(ppidpi);
+    serverHelperUtil.renderWebPage(response, 'competence5_1.html', data);
+});
+
+app.get('/competence5_2', function (request, response) {
+    let data = {};
+    let company = docDir + "/competence_5_2/company.md";
+    data.company = mdConverterUtil.convertMDFileToHtml(company);
+    serverHelperUtil.renderWebPage(response, 'competence5_2.html', data);
+});
+
+app.get('/competence5_3', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence5_3.html', null);
+});
+
+app.get('/competence5_4', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence5_4.html', null);
+});
+
 /////////////////
 /////Others//////
 /////////////////
@@ -195,7 +272,10 @@ app.get('/learnjournal', function (request, response) {
     data.lernjournal_20180416 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180416.md");
     data.lernjournal_20180423 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180423.md");
     data.lernjournal_20180430 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180430.md");
-    data.lernjournal_20180530 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180530.md");
+    data.lernjournal_20180514 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180514.md");
+    data.lernjournal_20180520 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180520.md");
+    data.lernjournal_20180528 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180528.md");
+    data.lernjournal_20180603 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180603.md");
 
     serverHelperUtil.renderWebPage(response, 'learnjournal.html', data);
 });
