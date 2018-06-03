@@ -191,6 +191,10 @@ app.get('/competence3_4', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'competence3_4.html', null);
 });
 
+app.get('/competence3_6', function (request, response) {
+    serverHelperUtil.renderWebPage(response, 'competence3_6.html', null);
+});
+
 app.get('/competence3_7', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'competence3_7.html', null);
 });
