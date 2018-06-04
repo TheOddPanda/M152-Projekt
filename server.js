@@ -265,6 +265,12 @@ app.get('/competence5_4', function (request, response) {
 /////Others//////
 /////////////////
 
+app.get('/moduleStart', function (request, response) {
+    let data = {};
+    data.portfolio = mdConverterUtil.convertMDFileToHtml(learnDir + "portfolio.md");
+    serverHelperUtil.renderWebPage(response, 'portfolio.html', data);
+});
+
 app.get('/learnjournal', function (request, response) {
     let data = {};
     data.learnjournal_20180319 = mdConverterUtil.convertMDFileToHtml(learnDir + "learnjournal_20180319.md");
@@ -280,10 +286,8 @@ app.get('/learnjournal', function (request, response) {
     data.lernjournal_20180520 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180520.md");
     data.lernjournal_20180528 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180528.md");
     data.lernjournal_20180603 = mdConverterUtil.convertMDFileToHtml(learnDir + "lernjournal_20180603.md");
-
     serverHelperUtil.renderWebPage(response, 'learnjournal.html', data);
 });
-
 
 app.get('/libraries', function (request, response) {
     serverHelperUtil.renderWebPage(response, 'libraries.html', null);
