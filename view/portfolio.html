@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="/static/css/portfolio.css"/>
 </head>
 <body>
-<% include component/navbar.html %>
-
 <div id="page-container">
+    <% include component/navbar.html %>
+    <div class="tab-content-padding">
+        <img src="/static/images/diagram.png" width="100%" style="border:1px solid black"/>
 
-    <img src="/static/images/diagram.png" width="100%" style="border:1px solid black"/>
-
-    <%- portfolio %>
+        <%- portfolio %>
+    </div>
 </div>
 </body>
 </html>
